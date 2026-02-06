@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script type="text/javascript">
+
+        function desenhoRenderizado() {
+            let desenho1 = document.getElementById("desenho1")
+            //Esse é o contexto eu sempre preciso dele 
+            let ctx=desenho1.getContext('2d')
+
+
+            ctx.fillStyle = "red"
+            ctx.rect(10,10,100,100)
+            ctx.fill()
+
+
+        }
+
+
+    </script>
+
+</head>
+<body onload="desenhoRenderizado()">
+    
+
+    <canvas id="desenho1" width="500" height="500">
+
+    </canvas>
+
+
+
+
+
+</body>
+</html>
